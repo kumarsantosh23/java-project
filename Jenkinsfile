@@ -37,7 +37,7 @@ pipeline {
  
    stage ('running on another node') {
     agent {
-     node ('slave1')
+     label 'slave1'
    }
     steps {
        sh "wget http://santu23551.mylabserver.com/rectagles/all/rectangle_${env.BUILD_NUMBER}.jar"
