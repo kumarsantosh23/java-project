@@ -33,7 +33,6 @@ pipeline {
         sh "cp dist/rectangle_${env.BUILD_NUMBER}.jar /var/www/html/rectangles/all/"
     }
   }
- }
  
    stage('running on another node') {
     agent {
