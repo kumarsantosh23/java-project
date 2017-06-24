@@ -35,7 +35,7 @@ pipeline {
   }
  }
  
-   stage ('running on another node') {
+   stage('running on another node') {
     agent {
      label 'slave1'
    }
